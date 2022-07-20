@@ -1,6 +1,6 @@
 ## Telegram-Log – Send message to a Telegram Bot or use it as a logger!
 
-*Telegram-Log* is a simple way to interact from multiple programming languages to a Telegram Bot.
+*Telegram-Log* is a simple way to interact from Java with a Telegram Bot.
 
 It is released under a Apache License 2.0.
 
@@ -27,7 +27,6 @@ You also need the chat id in order to use the Telegram-Log application.
 Now you are ready to go to the next step!
  
 ## Quickstart
-### Java
 
 To use the application you need to:
 
@@ -42,7 +41,7 @@ Then, you will be able to import this project in any of your projects simply by 
     		<version>1.0-SNAPSHOT</version>
     	</dependency>
 
-##### Usage 1: Send message
+#### Usage 1: Send message
 
 As explained in `src/main/java/it/forons/utils/telegram/TelegramSender.java` there two ways to send messages to a Telegram Bot:
 ```java    
@@ -71,35 +70,7 @@ log4j.appender.telegram.layout=org.apache.log4j.PatternLayout
 log4j.appender.telegram.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n
 ```
 
-### Python
-
-Just configure
-
-```
-TELEGRAM_TOKEN = ''
-TELEGRAM_CHAT_ID = ''
-```
-
-with your `TOKENID` and `CHATID`, then use it as a simple Python logger:
-
-```
-logger = logging.getLogger('trymeApp')
-	logger.setLevel(logging.WARNING)
-
-	handler = RequestsHandler()
-	formatter = LogstashFormatter()
-	handler.setFormatter(formatter)
-	logger.addHandler(handler)
-
-	logger.setLevel(logging.WARNING)
-
-	logger.error('We have a problem')
-```
-
-
 ## License
-This project is licensed under the MIT License - see the LICENSE.md file for details
-
 ## Acknowledgments
 [Marco De Nadai](http://www.marcodena.it/) and [Paolo Sottovia](http://github.com/welpaolo/) for the inspiration
 
