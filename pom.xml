@@ -31,12 +31,10 @@
 
   <developers>
     <developer>
-      <id>forons</id>
-      <name>Daniele Foroni</name>
-      <email>daniele.foroni@gmail.com</email>
-      <url>http://disi.unitn.it/~forons</url>
-      <organization>University of Trento - DbTrento</organization>
-      <organizationUrl>http://db.disi.unitn.eu/</organizationUrl>
+      <id>hasandiwan</id>
+      <name>Hasan Diwan</name>
+      <email>hasandiwan@gmail.com</email>
+      <organization>Jackson Street Capital</organization>
     </developer>
   </developers>
 </project>
